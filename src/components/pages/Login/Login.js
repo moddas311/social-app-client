@@ -45,7 +45,7 @@ const Login = () => {
 
     const saveUser = (name, email, image) => {
         const user = { name, email, image }
-        fetch('http://localhost:5000/users', {
+        fetch('https://social-media-server-virid.vercel.app/users', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

@@ -7,7 +7,7 @@ const About = () => {
     const [userDetails, setUserDetails] = useState('')
 
     useEffect(() => {
-        fetch(`http://localhost:5000/users/${user?.email}`)
+        fetch(`https://social-media-server-virid.vercel.app/users/${user?.email}`)
             .then(res => res.json())
             .then(data => {
                 console.log(data);

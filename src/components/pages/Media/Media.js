@@ -9,7 +9,7 @@ const Media = () => {
     const [allStatus, setAllStatus] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/allStatus')
+        fetch('https://social-media-server-virid.vercel.app/allStatus')
             .then(res => res.json())
             .then(data => {
                 setAllStatus(data);

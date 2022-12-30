@@ -63,7 +63,7 @@ const Register = () => {
 
         const saveUser = (name, email, image) => {
             const user = { name, email, image }
-            fetch('http://localhost:5000/users', {
+            fetch('https://social-media-server-virid.vercel.app/users', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'
@@ -78,64 +78,6 @@ const Register = () => {
 
 
     }
-
-
-
-
-    //     createUser(data.email, data.password)
-    //         .then(result => {
-    //             const user = result.user;
-    //             console.log(user);
-    //             toast.success('User Created Successfully');
-    //             navigate('/');
-
-    //             // update
-    //             const profile = {
-    //                 displayName: data.name,
-    //             }
-
-    //             fetch(url, {
-    //                 method: 'POST',
-    //                 body: formData
-    //             })
-    //                 .then(res => res.json())
-    //                 .then(imgData => {
-    //                     if (imgData.success) {
-    //                         profile.photoURL = imgData.data.url;
-    //                         console.log(profile.photoURL);
-    //                         updateUser(profile)
-    //                             .then(() => {
-    //                                 saveUser(data.name, data.email);
-
-    //                             })
-    //                             .catch(er => {
-    //                                 toast.error(er.message);
-    //                             })
-    //                     }
-    //                 })
-    //         })
-    //         .catch(err => {
-    //             toast.error(err.message);
-    //             setRegisterError(err.message);
-    //         });
-    // }
-
-    // const saveUser = (name, email) => {
-    //     const user = { name, email }
-    //     fetch('', {
-    //         method: 'POST',
-    //         headers: {
-    //             'content-type': 'application/json'
-    //         },
-    //         body: JSON.stringify(user)
-    //     })
-    //         .then(res => res.json())
-    //         .then(data => {
-    //             console.log(data);
-    //         })
-
-
-
     return (
         <div className='flex justify-center items-center'>
             <div className='w-96 p-7'>

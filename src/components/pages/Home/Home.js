@@ -31,7 +31,7 @@ const Home = () => {
                         status: data.status
                     }
 
-                    fetch('http://localhost:5000/allStatus', {
+                    fetch('https://social-media-server-virid.vercel.app/allStatus', {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json',
